@@ -23,7 +23,7 @@
     };
   </script>
   <style>
-    * {
+- {
       box-sizing: border-box;
       -webkit-tap-highlight-color: transparent;
     }
@@ -757,7 +757,7 @@
       'use strict';
 
       /* =====================================================================
-         1. Web Audio API 効果音エンジン
+1. Web Audio API 効果音エンジン
       ===================================================================== */
       const SoundFX = {
         enabled: true,
@@ -812,7 +812,7 @@
       };
 
       /* =====================================================================
-         2. 通常雑学データベース（迷う2択ペア：全50テーマ × ○・✕ ＝ 100問）
+2. 通常雑学データベース（迷う2択ペア：全50テーマ × ○・✕ ＝ 100問）
       ===================================================================== */
 const NORMAL_THEMES = [
         {
@@ -2217,214 +2217,9 @@ const NORMAL_THEMES = [
         }
 
       ];
-      /* =====================================================================
-         3. 結婚式フェーズ専用 雑学データベース（迷う2択ペア：全25テーマ × ○・✕ ＝ 50問）
-      ===================================================================== */
-      const WEDDING_THEMES = [
-        {
-          id: 'w01',
-          num: 1,
-          title: '左手薬指の「愛の静脈」',
-          trueStatement: '結婚指輪を左手の薬指にはめるのは、古代ギリシャで「左手薬指から心臓へ愛の静脈が直接つながっている」と信じられていたからである。',
-          falseStatement: '結婚指輪を左手の薬指にはめるのは、古代ローマで「左手の薬指が最も魔力が強く悪霊を追い払える」と信じられていたからである。',
-          explanation: '古代ギリシャ・ローマでは、左手薬指の血管（ヴェナ・アモリス＝愛の静脈）が心臓（心）に直結していると信じられ、永遠の愛の証として指輪をはめるようになりました。'
-        },
-        {
-          id: 'w02',
-          num: 2,
-          title: 'サムシング・ブルーの秘密',
-          trueStatement: '花嫁が幸せになるおまじない「サムシング・フォー」のサムシング・ブルーは、純潔や誠実さを象徴し、人目につかない場所にこっそり身につけるのが伝統である。',
-          falseStatement: '花嫁が幸せになるおまじない「サムシング・フォー」のサムシング・ブルーは、挙式中に参列者全員に見えるよう青いブーケを持つのが伝統である。',
-          explanation: 'サムシング・ブルー（何か青いもの）は、ガーターベルトや靴の裏、ドレスの内側の刺繍など、目立たないところにこっそり身につけるのが伝統です。'
-        },
-        {
-          id: 'w03',
-          num: 3,
-          title: '純白のウェディングドレスの起源',
-          trueStatement: 'ウェディングドレスが「純白」になったのは、19世紀にイギリスのヴィクトリア女王が結婚式で白いドレスを着たことがきっかけで広まった。',
-          falseStatement: 'ウェディングドレスは中世ヨーロッパの教会法によって純白しか認められておらず、王侯貴族が色付きのドレスを着ることは禁止されていた。',
-          explanation: '1840年のヴィクトリア女王のご成婚以前は、赤や金、青などの豪華な色のドレスを着るのが一般的でした。女王の純白のレースドレスが世界中の憧れとなったのです。'
-        },
-        {
-          id: 'w04',
-          num: 4,
-          title: 'ウェディングベールの魔除け',
-          trueStatement: '結婚式で新婦が顔にベールを被るのは、美しい花嫁に嫉妬する悪魔や邪悪なものから守る「魔除け」の意味が込められている。',
-          falseStatement: '結婚式で新婦が顔にベールを被るのは、神様の前で花嫁が涙を流す顔を参列者に見せないためのエチケットとして始まった風習である。',
-          explanation: '古代ローマ時代から、悪霊から花嫁を守るバリアとしてベールが用いられました。新郎がベールを上げる「ベールアップ」には二人の間の壁を取り払う意味があります。'
-        },
-        {
-          id: 'w05',
-          num: 5,
-          title: '誓いのキスの本当の意味',
-          trueStatement: '教会式で交わす「誓いのキス」には、先ほど神の前で宣言した「誓いの言葉を口の中に閉じ込めて封印する」という意味がある。',
-          falseStatement: '教会式で交わす「誓いのキス」には、二人の魂を半分ずつ交換して一つの家族になったことを神父に証明するという意味がある。',
-          explanation: '古代ローマでは契約や誓いの証としてキスを交わし、誓った言葉を外に逃がさず永遠に守るという神聖な封印の意味が込められていました。'
-        },
-        {
-          id: 'w06',
-          num: 6,
-          title: 'ジューンブライドの由来',
-          trueStatement: '「6月に結婚する花嫁は幸せになれる（ジューンブライド）」の由来は、ローマ神話で結婚と家庭を守護する女神ユノ（Juno）が守護する月が6月だからである。',
-          falseStatement: '「6月に結婚する花嫁は幸せになれる（ジューンブライド）」の由来は、ヨーロッパでは6月が1年で最も晴天率が高く雨が降らない月だからである。',
-          explanation: '結婚・出産・育児の女神ユノ（Juno）が守護する6月（June）に結婚することで、女神の加護を受けて幸せになれると言い伝えられています。'
-        },
-        {
-          id: 'w07',
-          num: 7,
-          title: '神の前での誓いの言葉',
-          trueStatement: 'キリスト教の結婚式で神父（牧師）が尋ねる「健やかなるときも、病めるときも…」の誓いは、新郎と新婦の双方が神と参列者の前で宣言する。',
-          falseStatement: 'キリスト教の結婚式で神父（牧師）が尋ねる「健やかなるときも、病めるときも…」の誓いは、伝統的に新郎だけが宣言し新婦は黙礼して応える。',
-          explanation: '新郎と新婦の双方が互いに生涯の愛と誠実を神の前で誓い合い、「はい、誓います」と宣言します。'
-        },
-        {
-          id: 'w08',
-          num: 8,
-          title: 'フラワーシャワーの祝福',
-          trueStatement: '挙式後に花びらを撒く「フラワーシャワー」には、花の香りで辺りを清め、新郎新婦を妬む悪魔を追い払う意味がある。',
-          falseStatement: '挙式後に花びらを撒く「フラワーシャワー」には、二人の歩む道に四季の花が咲き誇るよう天候の神に祈願するという意味がある。',
-          explanation: '古代ローマで豊かな実りと子孫繁栄を願って小麦を撒いた風習が起源で、のちに花の香りで魔除けをするフラワーシャワーへと発展しました。'
-        },
-        {
-          id: 'w09',
-          num: 9,
-          title: 'ブーケトスを後ろ向きに投げる理由',
-          trueStatement: '花嫁が「ブーケトス」で後ろ向きに花束を投げるのは、誰に当たるかを神様の導き（運命）に委ねるためである。',
-          falseStatement: '花嫁が「ブーケトス」で後ろ向きに花束を投げるのは、独身時代の過去を振り返らず新しい人生へ進む決意を示すためである。',
-          explanation: '特定の友人を狙うのではなく、後ろ向きに投げることで公平に幸運を分かち合い、次に結婚する花嫁を神様に決めてもらう意味があります。'
-        },
-        {
-          id: 'w10',
-          num: 10,
-          title: 'ハネムーン（蜜月）の語源',
-          trueStatement: '新婚旅行を表す「ハネムーン」の語源は、結婚後1ヶ月間「ハチミツ酒」を飲んで子宝と健康を祈った古代の風習から来ている。',
-          falseStatement: '新婚旅行を表す「ハネムーン」の語源は、新婚最初の満月が昇る夜に二人で旅に出る中世貴族の風習から来ている。',
-          explanation: '古代ゲルマン民族などで、新婚夫婦が結婚から1ヶ月間、栄養豊富なハチミツ酒（ミード）を飲んで過ごした習慣から「蜜の月（Honeymoon）」と呼ばれました。'
-        },
-        {
-          id: 'w11',
-          num: 11,
-          title: 'バージンロードが表す人生',
-          trueStatement: '教会のバージンロードは、扉が開く「誕生」から新郎のもとへ辿り着く「現在」、そして二人で歩む「未来」までの人生そのものを表している。',
-          falseStatement: '教会のバージンロードは、天上の神殿から地上へ降りる階段を模しており、一歩ごとに7つの徳を積む修行の道を表している。',
-          explanation: '一歩ずつ歩く道が「これまでの人生」、新郎にバトンタッチする瞬間が「現在」、二人で歩む先が「未来」を象徴する神聖な道です。'
-        },
-        {
-          id: 'w12',
-          num: 12,
-          title: '日本の神前式・三三九度',
-          trueStatement: '日本の神前式で交わす「三三九度（さんさんくど）」は、大・中・小の3つの盃でそれぞれ3回ずつ口をつける（3×3＝9回）伝統儀式である。',
-          falseStatement: '日本の神前式で交わす「三三九度（さんさんくど）」は、3種類の異なるお神酒を新郎新婦が交互に9回ずつ飲み干す伝統儀式である。',
-          explanation: '実際に口に含む量はほんのわずかで、奇数（陽の数）が重なるおめでたい数字「3×3＝9」で永遠の契りを結びます。'
-        },
-        {
-          id: 'w13',
-          num: 13,
-          title: '神前結婚式が広まったきっかけ',
-          trueStatement: '現在のスタイルの「神前結婚式」が日本で広まったのは、1900年（明治33年）の皇太子（後の大正天皇）のご成婚の儀がきっかけである。',
-          falseStatement: '現在のスタイルの「神前結婚式」は、江戸時代に幕府がすべての武家に対して神社での挙式を義務付けたことから一般へ広まった。',
-          explanation: 'それまで自宅で行われていた婚礼を、皇室のご成婚を機に神社の神前で行うスタイルが確立され、東京大神宮などから一般へ広まりました。'
-        },
-        {
-          id: 'w14',
-          num: 14,
-          title: '3段ウェディングケーキの秘密',
-          trueStatement: 'イギリスの伝統的な3段ウェディングケーキには「1段目はゲスト用、2段目は欠席者への配り用、3段目は1年後の記念日に食べる用」という意味がある。',
-          falseStatement: 'イギリスの伝統的な3段ウェディングケーキには「1段目は新郎新婦用、2段目は両家の両親用、3段目は神父と聖歌隊用」という意味がある。',
-          explanation: '3段目は洋酒をたっぷり染み込ませた日持ちするフルーツケーキで作り、1年後の結婚記念日や第一子誕生の祝いに食べる伝統がありました。'
-        },
-        {
-          id: 'w15',
-          num: 15,
-          title: 'ライスシャワーの願い',
-          trueStatement: 'お米を撒いて祝福する「ライスシャワー」には、新郎新婦が「一生食べ物に困らず、子孫にも恵まれますように」という願いが込められている。',
-          falseStatement: 'お米を撒いて祝福する「ライスシャワー」には、白いお米の粒で新郎新婦のこれまでの厄や過去の過ちを清め落とすという意味がある。',
-          explanation: 'お米は豊穣と子孫繁栄の象徴であり、二人の豊かな人生と家庭の繁栄を願う欧米の伝統的な祝福セレモニーです。'
-        },
-        {
-          id: 'w16',
-          num: 16,
-          title: 'イギリス王室のブーケの伝統',
-          trueStatement: 'イギリス王室の結婚式では、歴代の花嫁のブーケに「愛の象徴」とされるハーブ「マートル（銀梅花）」の枝を必ず入れる伝統がある。',
-          falseStatement: 'イギリス王室の結婚式では、歴代の花嫁のブーケに「永遠の若さ」を象徴するローズマリーの枝だけを束ねて持つ伝統がある。',
-          explanation: 'ヴィクトリア女王の結婚式以来、愛と純潔の象徴であるマートルの枝をブーケに忍ばせるロマンチックな伝統が続いています。'
-        },
-        {
-          id: 'w17',
-          num: 17,
-          title: 'ブライズメイドの本当の役割',
-          trueStatement: '花嫁の付き添い人「ブライズメイド」が花嫁と似たドレスを着るのは、悪魔の目を欺いて「本物の花嫁がどれか分からなくする」ためである。',
-          falseStatement: '花嫁の付き添い人「ブライズメイド」が花嫁と似たドレスを着るのは、花嫁のドレスが汚れたときにすぐ衣装を交換できるようにするためである。',
-          explanation: 'かつて幸せな花嫁を狙う悪霊や略奪者から守るため、未婚の姉妹や友人が花嫁と同じような衣装を着て身代わり・カモフラージュになったのが起源です。'
-        },
-        {
-          id: 'w18',
-          num: 18,
-          title: '新居の敷居とお姫様抱っこ',
-          trueStatement: '新郎が新婦を抱きかかえて新居の敷居をまたぐ風習は、花嫁が敷居につまずくと不吉なことが起きると信じられていたため始まった。',
-          falseStatement: '新郎が新婦を抱きかかえて新居の敷居をまたぐ風習は、新居の土地神に「自分が花嫁を養う力がある」と示す体力テストから始まった。',
-          explanation: '古代ローマでは新居の入り口で花嫁がつまずくのは結婚生活の悪い前兆とされたため、新郎が抱き上げて玄関を通る習慣が生まれました。'
-        },
-        {
-          id: 'w19',
-          num: 19,
-          title: 'ウェディングベルの音色',
-          trueStatement: '結婚式で鳴り響く教会の鐘「ウェディングベル」には、天の天使に結婚を知らせ、悪魔や災いを遠ざける魔除けの意味がある。',
-          falseStatement: '結婚式で鳴り響く教会の鐘「ウェディングベル」には、教会の時計の針を止めて二人の幸福な時間を永遠に固定するという意味がある。',
-          explanation: '教会の鐘の清らかな音色は神の祝福を運び、邪気を払うと信じられており、新郎新婦の新たな門出を祝福します。'
-        },
-        {
-          id: 'w20',
-          num: 20,
-          title: 'ケーキ入刀に込められた誓い',
-          trueStatement: '披露宴の定番「ケーキ入刀」には、新郎新婦が初めて共同作業を行うことで「これからの人生の困難も二人で切り拓く」という意味がある。',
-          falseStatement: '披露宴の定番「ケーキ入刀」には、神様から授かった甘い幸福を参列者全員に公平に分け与えるという宗教儀式の意味がある。',
-          explanation: 'さらに切り分けたケーキを食べさせ合う「ファーストバイト」には「一生食べるものに困らせない」「美味しい料理を作る」という誓いが込められています。'
-        },
-        {
-          id: 'w21',
-          num: 21,
-          title: 'イタリアのユニークな結婚占い',
-          trueStatement: 'イタリアの結婚式では、新郎新婦が「ガラスのコップ」を床に叩きつけて割り、その破片の数だけ幸せが続くと占う風習がある。',
-          falseStatement: 'イタリアの結婚式では、新郎新婦が「結婚指輪の入った陶器の小箱」を床に落として割り、その破片の数だけ子宝に恵まれると占う風習がある。',
-          explanation: 'ガラスのコップ（グラス）を割って破片の数だけ結婚生活が長く幸せに続くと占う、イタリアの伝統的なおまじないです。'
-        },
-        {
-          id: 'w22',
-          num: 22,
-          title: '幸福を運ぶお菓子ドラジェ',
-          trueStatement: 'フランスの結婚式でゲストに配るお菓子「ドラジェ」は、アーモンドを砂糖で包んだもので「幸福・健康・富・子孫繁栄・長寿」の象徴である。',
-          falseStatement: 'フランスの結婚式でゲストに配るお菓子「ドラジェ」は、角砂糖に金箔を貼ったもので「甘く輝く未来」を象徴する伝統菓子である。',
-          explanation: 'アーモンドの木はたくさんの実をつけることから子孫繁栄の象徴とされ、5粒のドラジェに5つの願いを込めて配る素敵な伝統があります。'
-        },
-        {
-          id: 'w23',
-          num: 23,
-          title: '婚約指輪（エンゲージリング）の歴史',
-          trueStatement: '婚約指輪の起源は古代ローマ時代に約束の証として鉄の輪を贈った風習や、1477年にハプスブルク家のマクシミリアン1世がダイヤの指輪を贈ったことに遡る。',
-          falseStatement: '男性が女性に「婚約指輪（エンゲージリング）」を贈る習慣は、19世紀のイギリスで王室が国民に奨励したことで世界で初めて誕生したものである。',
-          explanation: '途切れることのない「輪」に永遠の愛を託す文化は古代ローマから存在し、中世ヨーロッパでダイヤモンドの婚約指輪へと発展しました。'
-        },
-        {
-          id: 'w24',
-          num: 24,
-          title: '祈りの言葉「アーメン」の本当の意味',
-          trueStatement: '結婚式で神への祈りの最後に唱える「アーメン（Amen）」とは、ヘブライ語で「まことに、その通りです（そうなりますように）」という意味である。',
-          falseStatement: '結婚式で神への祈りの最後に唱える「アーメン（Amen）」とは、ラテン語で「神の御名のもとに愛を誓います」という意味である。',
-          explanation: '祈りや神の言葉に対して心から同意し「本当にそうなりますように」と誓いを立てるヘブライ語由来の神聖な言葉です。'
-        },
-        {
-          id: 'w25',
-          num: 25,
-          title: 'ウェディンググローブの本当の意味',
-          trueStatement: '花嫁が挙式で白い手袋（ウェディンググローブ）をつけるのは、無垢で清らかな存在であることを示し、指輪交換で外すことで「あなたのものになります」と誓う意味がある。',
-          falseStatement: '花嫁が挙式で白い手袋（ウェディンググローブ）をつけるのは、祭壇の聖書や十字架に直接素手で触れるのを避ける礼儀作法として始まった風習である。',
-          explanation: '結婚式前の花嫁は神聖で無垢な存在として肌を覆い、指輪交換の瞬間にグローブを外すことで新郎にすべてを委ねるというロマンチックな意味があります。'
-        }
-      ];
 
       /* =====================================================================
-         4. 高精細美少女ヒロイン「天宮 栞」ベクター描画エンジン
+4. 高精細美少女ヒロイン「天宮 栞」ベクター描画エンジン
             （表情: normal, happy, smug, pout, shy, surprised, wedding ＋ まばたき対応）
       ===================================================================== */
       function buildHighDetailHeroineSVG(expression = 'normal', isBlinking = false) {
@@ -2722,7 +2517,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         5. 画像アセット管理（GitHub `./assets/` 自動検出 ＋ localStorage保存
+5. 画像アセット管理（GitHub `./assets/` 自動検出 ＋ localStorage保存
             ＋ JPEG背景自動透過 ＋ スマホ自動中央トリミング）
       ===================================================================== */
       const CUSTOM_IMG_STORAGE_KEY = 'shiori_custom_assets_v5';
@@ -2951,7 +2746,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         6. 背景テーマ適用
+6. 背景テーマ適用
       ===================================================================== */
       function applySceneBackground(shortName) {
         const bgKey = 'bg_' + shortName;
@@ -3041,7 +2836,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         7. 結婚雑学図鑑永続保持（全25種）
+7. 結婚雑学図鑑永続保持（全25種）
       ===================================================================== */
       const ENCYCLOPEDIA_STORAGE_KEY = 'shiori_wedding_encyclopedia_v5';
 
@@ -3123,7 +2918,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         8. F5リロード完全対応状態保持 ＆ 2回お出かけ出現禁止クールダウン管理
+8. F5リロード完全対応状態保持 ＆ 2回お出かけ出現禁止クールダウン管理
       ===================================================================== */
       const PROGRESS_STORAGE_KEY = 'shiori_trivia_progress_v5';
 
@@ -3247,7 +3042,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         9. タイプライター演出・自動まばたき・常時可視ヒロインステージ更新
+9. タイプライター演出・自動まばたき・常時可視ヒロインステージ更新
       ===================================================================== */
       let typewriterTimer = null;
       let fullDialoguePlain = '';
@@ -3329,10 +3124,10 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         10. ハート好感度バー描画＆アニメーション（初期0%・マイナスも0%固定・下部文字なし）
+10. ハート好感度バー描画＆アニメーション（初期0%・マイナスも0%固定・下部文字なし）
       ===================================================================== */
       function affinityToPercent(val) {
-        return Math.max(0, Math.min(100, (val / 80) * 100));
+        return Math.max(0, Math.min(100, (val / 35) * 100));
       }
 
       function mountHeartGauge(containerId, options = {}) {
@@ -3429,7 +3224,7 @@ const NORMAL_THEMES = [
               cursor.style.left = `${targetPct}%`;
               const emojiSpan = cursor.querySelector('span');
               if (emojiSpan) {
-                emojiSpan.textContent = targetAffinity < 0 ? '💔' : (targetAffinity >= 80 ? '💝' : '💖');
+                emojiSpan.textContent = targetAffinity < 0 ? '💔' : (targetAffinity >= 35 ? '💝' : '💖');
               }
             }
             if (ghost) {
@@ -3552,7 +3347,7 @@ const NORMAL_THEMES = [
           btnContinue.classList.remove('hidden');
           startNewLabel.textContent = '最初から恋を始める';
 
-          if (GameState.affinity >= 80) {
+          if (GameState.affinity >= 35) {
             btnContinueLabel.textContent = '続きからデートする（結婚式チャペルへ！）';
           } else if (GameState.questionIndexInOuting > 0 && GameState.questionIndexInOuting < 10) {
             btnContinueLabel.textContent = `続きからデートする（第${GameState.questionIndexInOuting + 1}問から）`;
@@ -3616,7 +3411,7 @@ const NORMAL_THEMES = [
           return;
         }
 
-        if (GameState.affinity >= 80 && GameState.screen !== 'quiz') {
+        if (GameState.affinity >= 35 && GameState.screen !== 'quiz') {
           if (GameState.screen === 'wedding_quiz' && GameState.currentWeddingQuestion) {
             enterPlayHUD(true);
             applySceneBackground('chapel');
@@ -3645,7 +3440,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         11. クイズ出題 ＆ 文脈に完全に合ったリアクションセリフ制御
+11. クイズ出題 ＆ 文脈に完全に合ったリアクションセリフ制御
       ===================================================================== */
       function renderCurrentQuizState(instant = false) {
         const qObj = GameState.currentQuestion;
@@ -3829,7 +3624,7 @@ const NORMAL_THEMES = [
 
         if (!isRestore) {
           GameState.outingStartAffinity = beforeAffinity;
-          GameState.affinity = Math.max(-15, Math.min(80, GameState.affinity + delta));
+          GameState.affinity = Math.max(-15, Math.min(35, GameState.affinity + delta));
           persistProgressSilently();
         }
         updateAffinityHUD(true);
@@ -3853,7 +3648,7 @@ const NORMAL_THEMES = [
         let comment = '';
         if (GameState.affinity <= -15) {
           comment = '「……ごめんね。私の本音も嘘も全然伝わらないみたいで……これ以上一緒にいるのは難しいかも……」';
-        } else if (GameState.affinity >= 80) {
+        } else if (GameState.affinity >= 35) {
           comment = '「私の嘘も本当もちゃんと見抜いてくれる人なら、これから先もずっと信じられる……！ ねえ、私と結婚しようね……♡」';
         } else if (delta >= 4) {
           comment = '「すごいよ！ 私の仕掛けた嘘までほとんど見抜いちゃうなんて……あなたならこれから先もずっと信じられそう♡」';
@@ -3873,7 +3668,7 @@ const NORMAL_THEMES = [
           btnNext.textContent = '💔 ゲームオーバー結果を見る ▶';
           btnNext.className = 'w-full py-3.5 px-5 rounded-2xl bg-slate-800 hover:bg-slate-900 text-white font-extrabold text-sm sm:text-lg shadow-lg transition cursor-pointer';
           btnBackHome.classList.add('hidden');
-        } else if (GameState.affinity >= 80) {
+        } else if (GameState.affinity >= 35) {
           btnNext.textContent = '🔔 結婚式（チャペル）へ進む！';
           btnNext.className = 'w-full py-3.5 px-5 rounded-2xl bg-gradient-to-r from-amber-400 via-pink-500 to-rose-500 text-white font-extrabold text-sm sm:text-lg shadow-lg shadow-amber-500/30 transition cursor-pointer';
           btnBackHome.classList.remove('hidden');
@@ -3912,7 +3707,7 @@ const NORMAL_THEMES = [
           triggerEnding('gameover_affinity', false);
           return;
         }
-        if (GameState.affinity >= 80) {
+        if (GameState.affinity >= 35) {
           enterWeddingIntro();
           return;
         }
@@ -3932,7 +3727,7 @@ const NORMAL_THEMES = [
           return;
         }
 
-        if (GameState.affinity < 80) {
+        if (GameState.affinity < 35) {
           prepareNextOuting();
         } else {
           GameState.screen = 'wedding_intro';
@@ -3956,7 +3751,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         12. 結婚式フェーズ
+12. 結婚式フェーズ
       ===================================================================== */
       function enterWeddingIntro() {
         GameState.screen = 'wedding_intro';
@@ -4040,7 +3835,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         13. 最終エンディング画面
+13. 最終エンディング画面
       ===================================================================== */
       function triggerEnding(endingType, isNewlyUnlocked = false) {
         GameState.screen = 'ending';
@@ -4121,7 +3916,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         14. レスポンシブ判定 ＆ 全イベントバインド
+14. レスポンシブ判定 ＆ 全イベントバインド
       ===================================================================== */
       function updateMobileViewportClass() {
         const shell = document.getElementById('viewportShell');
@@ -4213,7 +4008,7 @@ const NORMAL_THEMES = [
         document.getElementById('btnDebugAdd20').addEventListener('click', () => {
           SoundFX.correct();
           GameState.hasActiveProgress = true;
-          GameState.affinity = Math.min(80, GameState.affinity + 20);
+          GameState.affinity = Math.min(35, GameState.affinity + 20);
           persistProgressSilently();
           updateAffinityHUD(true);
 
@@ -4225,7 +4020,7 @@ const NORMAL_THEMES = [
             showHomeScreen();
             updateAffinityHUD(true);
           }
-          if (GameState.affinity >= 80 && (GameState.screen === 'quiz' || GameState.screen === 'outing_result')) {
+          if (GameState.affinity >= 35 && (GameState.screen === 'quiz' || GameState.screen === 'outing_result')) {
             document.getElementById('modalSettings').classList.add('hidden');
             document.getElementById('modalOutingResult').classList.add('hidden');
             enterWeddingIntro();
@@ -4257,7 +4052,7 @@ const NORMAL_THEMES = [
         document.getElementById('btnDebugJumpWedding').addEventListener('click', () => {
           SoundFX.click();
           GameState.hasActiveProgress = true;
-          GameState.affinity = 80;
+          GameState.affinity = 35;
           persistProgressSilently();
           updateAffinityHUD(true);
           document.getElementById('modalSettings').classList.add('hidden');
@@ -4332,7 +4127,7 @@ const NORMAL_THEMES = [
       }
 
       /* =====================================================================
-         15. 起動・F5リロード時状態復元エントリーポイント
+15. 起動・F5リロード時状態復元エントリーポイント
       ===================================================================== */
       window.addEventListener('DOMContentLoaded', () => {
         AssetManager.init();
